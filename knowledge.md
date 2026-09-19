@@ -12,7 +12,7 @@
 
 <div id="kb-results" class="kb-results"></div>
 
-<link rel="stylesheet" href="assets/vendor/katex/katex.min.css">
-<script src="assets/vendor/katex/katex.min.js"></script>
-<script src="assets/vendor/katex/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="assets/katex/katex.min.css">
+<script src="assets/katex/katex.min.js"></script>
+<script src="assets/katex/contrib/auto-render.min.js"></script>
 <script src="assets/js/knowledge.js"></script>
