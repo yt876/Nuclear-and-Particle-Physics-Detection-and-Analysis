@@ -72,6 +72,15 @@ a:hover {
   height: 96px;
 }
 
+.site-partner {
+  flex: 0 0 auto;
+  margin-left: auto;
+  height: 40px;
+  width: auto;
+  padding-left: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .site-title {
   min-width: 0;
 }
@@ -251,6 +260,11 @@ a:hover {
   .site-logo {
     width: 72px;
     height: 72px;
+  }
+
+  .site-partner {
+    height: 26px;
+    padding-left: 12px;
   }
 
   .site-nav__inner {
