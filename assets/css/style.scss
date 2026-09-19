@@ -240,6 +240,7 @@ a:hover {
 .team-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 28px;
   margin: 1.3em 0 0.4em;
 }
@@ -259,7 +260,7 @@ a:hover {
 .team-photo {
   display: block;
   width: 150px;
-  height: 150px;
+  height: 180px;
   margin: 0 auto 12px;
   object-fit: cover;
   object-position: center top;
