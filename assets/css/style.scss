@@ -175,6 +175,18 @@ a:hover {
   font-size: 1.12rem;
 }
 
+.tag-lab {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #7a5c00;
+  background: #ffe58a;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
 .course-content p,
 .course-content ul,
 .course-content ol {
