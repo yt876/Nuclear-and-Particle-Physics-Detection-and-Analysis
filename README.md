@@ -6,6 +6,26 @@
 
 本课程围绕核辐射探测技术展开，讲授射线与物质相互作用、气体 / 闪烁 / 半导体探测器（配套实验）、核实验测量与电子学；学习 ROOT 数据分析、Geant4 等仿真；介绍医学诊疗与空天探测应用，培养核技术方向科研实践能力。
 
+## 教学团队
+
+<div class="team-grid">
+  <a class="team-card" href="https://physics.buaa.edu.cn/info/1265/4767.htm" target="_blank" rel="noopener">
+    <img class="team-photo" src="assets/images/team/sunbaohua.jpg" alt="孙保华">
+    <span class="team-name">孙保华 教授</span>
+    <span class="team-honor">杰青</span>
+  </a>
+  <a class="team-card" href="https://physics.buaa.edu.cn/info/1265/3155.htm" target="_blank" rel="noopener">
+    <img class="team-photo" src="assets/images/team/zhouxiaopeng.jpg" alt="周小朋">
+    <span class="team-name">周小朋 教授</span>
+    <span class="team-honor">青年长江</span>
+  </a>
+  <a class="team-card" href="https://physics.buaa.edu.cn/info/1265/3152.htm" target="_blank" rel="noopener">
+    <img class="team-photo" src="assets/images/team/yuanli.jpg" alt="袁丽">
+    <span class="team-name">袁丽 教授</span>
+    <span class="team-honor">青年拔尖</span>
+  </a>
+</div>
+
 ## 学习目标与前置知识
 
 - 掌握常用核辐射探测器的工作原理和基本实验技术；
