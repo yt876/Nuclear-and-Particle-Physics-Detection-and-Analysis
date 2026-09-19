@@ -61,15 +61,21 @@
   "term": "术语名",
   "en": "English",
   "category": "公式",
-  "chapter": "3. 射线与物质的相互作用",
+  "chapter": "第6章 辐射与物质的相互作用",
+  "source": "核辐射物理及探测学",
   "keywords": ["关键词1", "关键词2"],
   "summary": "一句话解释。",
-  "formula": "$$ ... $$"
+  "formula": "$$ ... $$",
+  "detail": "<p>详解 / 推导 / 考点，可含 HTML 与 LaTeX。</p>"
 }
 ```
 
-- `category` 取值：公式 / 概念 / 方法 / 工具 / 术语；`formula` 可省略
+- `category` 取值：概念 / 术语 / 公式 / 理论 / 推导 / 方法 / 考点 / 总结 / 工具
+- `chapter` 用教材章节名（如 `第6章 辐射与物质的相互作用`）；非教材内容用 `课程补充`
+- `source` 教材条目为 `核辐射物理及探测学`，课程补充为 `课程补充`
+- `formula`、`detail` 均可省略；`detail` 允许 `<p> <ul> <ol> <li> <table>` 等 HTML 片段
 - 公式用 LaTeX：行间 `$$...$$`、行内 `\(...\)`，由本地 KaTeX 渲染
+- 正文中的 `<`、`>`、`&` 需写成 `&lt;`、`&gt;`、`&amp;`（数学段内同理），避免 innerHTML 解析出错
 - 更新后把 `assets/js/knowledge.js` 里 `knowledge.json?v=N` 的 `N` 加 1
 
 ### 课程内容分栏

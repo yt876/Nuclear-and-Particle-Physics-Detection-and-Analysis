@@ -301,6 +301,11 @@ a:hover {
   background: #eef1f4;
 }
 
+.kb-tag--src {
+  color: #7a5b1e;
+  background: #f7efd8;
+}
+
 .kb-formula {
   margin: 10px 0;
   overflow-x: auto;
@@ -308,6 +313,67 @@ a:hover {
 
 .kb-summary {
   margin: 8px 0 0;
+}
+
+.kb-detail {
+  margin: 10px 0 0;
+  border: 1px dashed var(--line);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.kb-detail > summary {
+  padding: 7px 12px;
+  cursor: pointer;
+  color: var(--accent);
+  font-size: 0.88rem;
+  user-select: none;
+}
+
+.kb-detail > summary:hover {
+  background: #f2f7fc;
+}
+
+.kb-detail__body {
+  padding: 4px 14px 12px;
+  border-top: 1px dashed var(--line);
+  font-size: 0.94rem;
+  line-height: 1.75;
+}
+
+.kb-detail__body p {
+  margin: 0.6em 0;
+}
+
+.kb-detail__body ul,
+.kb-detail__body ol {
+  margin: 0.6em 0;
+  padding-left: 1.4em;
+}
+
+.kb-detail__body li + li {
+  margin-top: 0.3em;
+}
+
+.kb-detail__body table {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.kb-detail__body th,
+.kb-detail__body td {
+  padding: 5px 10px;
+  border: 1px solid var(--line);
+  text-align: left;
+}
+
+.kb-detail__body .katex-display {
+  margin: 0.6em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .kb-keywords {
