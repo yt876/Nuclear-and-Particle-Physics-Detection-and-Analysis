@@ -187,6 +187,113 @@ a:hover {
   vertical-align: middle;
 }
 
+.kb-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 1.2em 0 0.6em;
+}
+
+.kb-search {
+  flex: 1 1 320px;
+  min-width: 0;
+  padding: 9px 12px;
+  font-size: 0.98rem;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.kb-search:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(0, 75, 141, 0.12);
+}
+
+.kb-select {
+  padding: 9px 12px;
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.kb-count {
+  margin: 0 0 0.8em;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.kb-results {
+  display: grid;
+  gap: 16px;
+}
+
+.kb-card {
+  padding: 16px 18px;
+  background: #fbfcfe;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+}
+
+.kb-card__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.kb-card__head h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.kb-en {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.kb-tags {
+  margin: 6px 0 0;
+}
+
+.kb-tag {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 1px 8px;
+  font-size: 0.75rem;
+  color: #004b8d;
+  background: #e3eefb;
+  border-radius: 4px;
+}
+
+.kb-tag--ch {
+  color: #5b6673;
+  background: #eef1f4;
+}
+
+.kb-formula {
+  margin: 10px 0;
+  overflow-x: auto;
+}
+
+.kb-summary {
+  margin: 8px 0 0;
+}
+
+.kb-keywords {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.kb-empty {
+  color: var(--muted);
+}
+
 .course-content p,
 .course-content ul,
 .course-content ol {

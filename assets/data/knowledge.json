@@ -1,0 +1,251 @@
+[
+  {
+    "term": "放射性活度与半衰期",
+    "en": "Activity & Half-life",
+    "category": "公式",
+    "chapter": "1. 辐射防护基础",
+    "keywords": ["活度", "衰变常数", "半衰期", "Bq", "贝可勒尔"],
+    "summary": "放射性核素单位时间的衰变数，单位为贝可勒尔（Bq，1 Bq = 1 次衰变/秒）；活度随时间按指数衰减。",
+    "formula": "$$ A = \\lambda N, \\qquad A(t) = A_0 e^{-\\lambda t}, \\qquad T_{1/2} = \\frac{\\ln 2}{\\lambda} $$"
+  },
+  {
+    "term": "辐射剂量单位",
+    "en": "Dose Units",
+    "category": "术语",
+    "chapter": "1. 辐射防护基础",
+    "keywords": ["吸收剂量", "当量剂量", "Gy", "Sv", "辐射权重"],
+    "summary": "吸收剂量 Gy = J/kg；当量剂量 Sv = 辐射权重因子 w_R × 吸收剂量，用于辐射防护评估生物效应。",
+    "formula": "$$ \\mathrm{Gy} = \\mathrm{J/kg}, \\qquad \\mathrm{Sv} = w_R \\cdot \\mathrm{Gy} $$"
+  },
+  {
+    "term": "半值层",
+    "en": "Half-Value Layer",
+    "category": "公式",
+    "chapter": "1. 辐射防护基础",
+    "keywords": ["屏蔽", "衰减", "HVL", "线性衰减系数"],
+    "summary": "使射线强度衰减到一半所需的材料厚度，用于描述屏蔽材料的衰减能力。",
+    "formula": "$$ x_{1/2} = \\frac{\\ln 2}{\\mu} $$"
+  },
+  {
+    "term": "二项分布",
+    "en": "Binomial Distribution",
+    "category": "公式",
+    "chapter": "2. 统计分布规律",
+    "keywords": ["伯努利", "概率", "计数", "n 次试验"],
+    "summary": "n 次独立试验中成功次数 k 的分布，每次成功概率为 p；当 p 很小、n 很大时趋近泊松分布。",
+    "formula": "$$ P(k) = \\binom{n}{k} p^{k} (1-p)^{n-k} $$"
+  },
+  {
+    "term": "泊松分布",
+    "en": "Poisson Distribution",
+    "category": "公式",
+    "chapter": "2. 统计分布规律",
+    "keywords": ["计数统计", "均值", "方差", "稀有事件"],
+    "summary": "描述单位时间/空间内稀有独立事件计数，均值等于方差（σ² = μ）；核辐射计数统计的核心分布。",
+    "formula": "$$ P(k) = \\frac{\\mu^{k} e^{-\\mu}}{k!}, \\qquad \\sigma = \\sqrt{\\mu} $$"
+  },
+  {
+    "term": "高斯（正态）分布",
+    "en": "Gaussian / Normal Distribution",
+    "category": "公式",
+    "chapter": "2. 统计分布规律",
+    "keywords": ["正态", "均值", "标准差", "中心极限"],
+    "summary": "大量独立随机变量之和趋近的分布；计数足够大时泊松分布过渡为高斯分布。",
+    "formula": "$$ f(x) = \\frac{1}{\\sqrt{2\\pi}\\,\\sigma}\\exp\\!\\left(-\\frac{(x-\\mu)^{2}}{2\\sigma^{2}}\\right) $$"
+  },
+  {
+    "term": "误差传播",
+    "en": "Error Propagation",
+    "category": "公式",
+    "chapter": "2. 统计分布规律",
+    "keywords": ["不确定度", "偏导", "合成误差", "间接测量"],
+    "summary": "由各自变量的不确定度合成因变量不确定度；各量相互独立时用偏导数平方和。",
+    "formula": "$$ \\sigma_f^{2} = \\sum_i \\left(\\frac{\\partial f}{\\partial x_i}\\right)^{2} \\sigma_{x_i}^{2} $$"
+  },
+  {
+    "term": "最大似然估计",
+    "en": "Maximum Likelihood Estimation",
+    "category": "方法",
+    "chapter": "2. 统计分布规律",
+    "keywords": ["MLE", "参数估计", "似然函数"],
+    "summary": "选择使观测数据出现概率最大的参数值作为估计；常用于计数实验的参数拟合。",
+    "formula": "$$ \\hat{\\theta}_{\\mathrm{MLE}} = \\arg\\max_{\\theta} \\prod_i p(x_i;\\theta) $$"
+  },
+  {
+    "term": "最小二乘法",
+    "en": "Least Squares / Chi-square Fit",
+    "category": "方法",
+    "chapter": "2. 统计分布规律",
+    "keywords": ["拟合", "卡方", "chi2", "加权拟合"],
+    "summary": "通过最小化残差平方和（考虑各点误差 σ_i）拟合模型参数，是曲线拟合的基本方法。",
+    "formula": "$$ \\chi^{2} = \\sum_i \\frac{\\left(y_i - f(x_i;\\theta)\\right)^{2}}{\\sigma_i^{2}} $$"
+  },
+  {
+    "term": "贝塞尔-布洛赫公式",
+    "en": "Bethe-Bloch Formula",
+    "category": "公式",
+    "chapter": "3. 射线与物质的相互作用",
+    "keywords": ["能损", "阻止本领", "dE/dx", "重带电粒子"],
+    "summary": "描述重带电粒子在物质中平均能量损失率（阻止本领）的经典公式，是中高能下能损计算的基础。",
+    "formula": "$$ -\\frac{dE}{dx} = 4\\pi N_A r_e^{2} m_e c^{2} z^{2} \\frac{Z}{A}\\,\\frac{1}{\\beta^{2}}\\left[\\frac{1}{2}\\ln\\!\\frac{2 m_e c^{2} \\beta^{2}\\gamma^{2} T_{\\max}}{I^{2}} - \\beta^{2} - \\frac{\\delta}{2}\\right] $$"
+  },
+  {
+    "term": "布拉格峰与射程",
+    "en": "Bragg Peak & Range",
+    "category": "概念",
+    "chapter": "3. 射线与物质的相互作用",
+    "keywords": ["Bragg", "射程", "能量沉积", "质子治疗"],
+    "summary": "带电粒子能损随穿透深度增大，在射程末端出现能量沉积峰（布拉格峰）；射程可由能损积分求得。",
+    "formula": "$$ R = \\int_0^{E_0} \\frac{dE}{-\\,dE/dx} $$"
+  },
+  {
+    "term": "光电效应",
+    "en": "Photoelectric Effect",
+    "category": "概念",
+    "chapter": "3. 射线与物质的相互作用",
+    "keywords": ["γ", "截面", "Z 依赖", "低能"],
+    "summary": "光子被原子吸收并打出内层电子；截面随原子序数约 Z⁴~Z⁵ 增大、随能量约 E⁻³ 下降，低能高 Z 时占主导。",
+    "formula": "$$ \\tau \\propto \\frac{Z^{4\\sim5}}{E_\\gamma^{3}} $$"
+  },
+  {
+    "term": "康普顿散射",
+    "en": "Compton Scattering",
+    "category": "公式",
+    "chapter": "3. 射线与物质的相互作用",
+    "keywords": ["散射", "波长偏移", "康普顿边", "中能"],
+    "summary": "光子与电子散射，波长发生偏移；偏移量只与散射角有关，是中等能量 γ 与物质作用的主要方式之一。",
+    "formula": "$$ \\lambda' - \\lambda = \\frac{h}{m_e c}\\left(1 - \\cos\\theta\\right) $$"
+  },
+  {
+    "term": "电子对效应",
+    "en": "Pair Production",
+    "category": "概念",
+    "chapter": "3. 射线与物质的相互作用",
+    "keywords": ["正负电子", "阈值", "高能", "高 Z"],
+    "summary": "高能光子在原子核库仑场中转化为正负电子对；存在能量阈值，高能高 Z 时占主导。",
+    "formula": "$$ E_\\gamma \\ge 2 m_e c^{2} = 1.022\\ \\mathrm{MeV} $$"
+  },
+  {
+    "term": "伽马射线衰减律",
+    "en": "Gamma Attenuation",
+    "category": "公式",
+    "chapter": "3. 射线与物质的相互作用",
+    "keywords": ["指数衰减", "衰减系数", "吸收", "μ"],
+    "summary": "窄束 γ 射线强度随穿透厚度按指数衰减，线性衰减系数 μ 由光电、康普顿、电子对三种效应贡献。",
+    "formula": "$$ I = I_0 e^{-\\mu x}, \\qquad \\mu = \\mu_{\\mathrm{pe}} + \\mu_{\\mathrm{C}} + \\mu_{\\mathrm{pp}} $$"
+  },
+  {
+    "term": "气体放大",
+    "en": "Gas Amplification",
+    "category": "概念",
+    "chapter": "4. 气体探测器",
+    "keywords": ["雪崩", "正比区", "放大倍数", "盖革"],
+    "summary": "强电场中电子碰撞电离形成雪崩，使收集电荷放大 10²~10⁵ 倍；对应正比计数器和盖革区的工作机制。",
+    "formula": "$$ M = \\frac{n}{n_0} \\sim 10^{2}\\!-\\!10^{5} $$"
+  },
+  {
+    "term": "闪烁体光产额",
+    "en": "Scintillator Light Yield",
+    "category": "概念",
+    "chapter": "5. 闪烁体探测器",
+    "keywords": ["光产额", "发光效率", "能量沉积", "光子数"],
+    "summary": "单位沉积能量产生的闪烁光子数，是衡量闪烁体性能的关键指标，决定探测器的统计分辨率。",
+    "formula": "$$ Y = \\frac{N_{\\mathrm{ph}}}{E_{\\mathrm{dep}}} $$"
+  },
+  {
+    "term": "脉冲形状甄别",
+    "en": "Pulse Shape Discrimination (PSD)",
+    "category": "方法",
+    "chapter": "5. 闪烁体探测器",
+    "keywords": ["PSD", "粒子鉴别", "衰减时间", "n/γ 甄别"],
+    "summary": "利用不同粒子在闪烁体中发光衰减时间（慢/快成分比例）的差异，通过波形分析实现 n/γ 等粒子甄别。"
+  },
+  {
+    "term": "PN 结与耗尽层",
+    "en": "PN Junction & Depletion Layer",
+    "category": "公式",
+    "chapter": "6. 半导体探测器",
+    "keywords": ["耗尽层", "偏压", "掺杂", "电场"],
+    "summary": "反偏 PN 结形成耗尽层作为灵敏体积；耗尽层厚度随偏压增大、随掺杂浓度减小而增厚。",
+    "formula": "$$ w = \\sqrt{\\frac{2\\varepsilon\\,(V + V_{\\mathrm{bi}})}{e N}} $$"
+  },
+  {
+    "term": "Fano 因子与能量分辨率",
+    "en": "Fano Factor",
+    "category": "公式",
+    "chapter": "6. 半导体探测器",
+    "keywords": ["Fano", "电离统计", "统计涨落", "本征分辨率"],
+    "summary": "实际电离产生的电子-空穴对数涨落小于泊松预期，用 Fano 因子 F（<1）修正，决定半导体探测器本征分辨率。",
+    "formula": "$$ \\sigma_N^{2} = F\\,N, \\qquad \\frac{\\sigma_E}{E} \\propto \\frac{1}{\\sqrt{E}} $$"
+  },
+  {
+    "term": "能量分辨率",
+    "en": "Energy Resolution",
+    "category": "公式",
+    "chapter": "7. 能谱测量",
+    "keywords": ["半高全宽", "FWHM", "分辨率", "峰宽"],
+    "summary": "用谱峰半高全宽（FWHM）与峰位能量之比表示，反映探测器分辨相邻能量的能力。",
+    "formula": "$$ R = \\frac{\\Delta E}{E} = \\frac{2.355\\,\\sigma}{E} $$"
+  },
+  {
+    "term": "符合测量",
+    "en": "Coincidence Measurement",
+    "category": "概念",
+    "chapter": "8. 符合方法与时间测量",
+    "keywords": ["符合", "偶然符合", "分辨时间", "真符合"],
+    "summary": "用时间符合电路筛选同一事件产生的多个信号；偶然符合率随符合分辨时间 τ 与两路计数率之积增大。",
+    "formula": "$$ N_{\\mathrm{acc}} = 2\\tau N_1 N_2 $$"
+  },
+  {
+    "term": "飞行时间法",
+    "en": "Time-of-Flight (TOF)",
+    "category": "公式",
+    "chapter": "8. 符合方法与时间测量",
+    "keywords": ["TOF", "速度", "粒子质量", "飞行距离"],
+    "summary": "测量粒子飞越固定距离 L 所需时间 t 得到速度，结合能量可推出粒子质量，用于粒子鉴别。",
+    "formula": "$$ v = \\frac{L}{t}, \\qquad E_k = \\frac{1}{2} m v^{2} $$"
+  },
+  {
+    "term": "ΔE-E 粒子鉴别",
+    "en": "ΔE-E Particle Identification",
+    "category": "公式",
+    "chapter": "9. 粒子鉴别",
+    "keywords": ["望远镜", "能损", "电荷", "质量鉴别"],
+    "summary": "透射探测器中的能损 ΔE 与剩余能量 E 联合作图，可同时确定粒子电荷 Z 与质量，实现同位素鉴别。",
+    "formula": "$$ \\Delta E \\propto \\frac{M Z^{2}}{E} $$"
+  },
+  {
+    "term": "死时间",
+    "en": "Dead Time",
+    "category": "公式",
+    "chapter": "10. 电子学及信号处理过程",
+    "keywords": ["计数率", "非扩展", "扩展", "校正"],
+    "summary": "探测器/电子学处理每个事件所需时间，期间无法记录新事件；高计数率下需对测量计数率作死时间校正。",
+    "formula": "$$ m = \\frac{n}{1 + n\\tau} $$"
+  },
+  {
+    "term": "蒙特卡罗方法",
+    "en": "Monte Carlo Method",
+    "category": "方法",
+    "chapter": "12. 探测器模拟基础",
+    "keywords": ["随机抽样", "统计模拟", "方差", "1/sqrt(N)"],
+    "summary": "通过大量随机抽样模拟物理过程，统计量精度随样本数 N 以 1/√N 改善；用于粒子输运与探测器响应模拟。",
+    "formula": "$$ \\bar{x} \\approx \\frac{1}{N}\\sum_{i=1}^{N} x_i, \\qquad \\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{N}} $$"
+  },
+  {
+    "term": "GEANT4",
+    "en": "GEANT4",
+    "category": "工具",
+    "chapter": "12. 探测器模拟基础",
+    "keywords": ["Geant4", "粒子输运", "探测器模拟", "C++"],
+    "summary": "基于 C++ 的开源粒子输运蒙特卡罗工具包，可模拟几何、物理过程、径迹与探测器响应，是核与粒子物理实验的主流仿真平台。"
+  },
+  {
+    "term": "TRIM / SRIM",
+    "en": "TRIM / SRIM",
+    "category": "工具",
+    "chapter": "12. 探测器模拟基础",
+    "keywords": ["能损", "射程", "离子", "SRIM"],
+    "summary": "SRIM/TRIM 用于计算离子在物质中的能损、射程与分布，常与 LISE++、MOCADI 等束流光学程序配合使用。"
+  }
+]

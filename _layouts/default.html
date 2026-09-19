@@ -6,7 +6,7 @@
     <meta name="description" content="{{ page.description | default: site.description | escape }}">
     <title>{% if page.title and page.url != '/' %}{{ page.title }} · {% endif %}{{ site.title }}</title>
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/course-logo.svg' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=3">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=4">
   </head>
   <body>
     <header class="site-header">
@@ -31,6 +31,7 @@
         <a{% if page.url contains 'programming' %} class="current"{% endif %} href="{{ '/programming.html' | relative_url }}">编程与 ROOT</a>
         <a{% if page.url contains 'montecarlo' %} class="current"{% endif %} href="{{ '/montecarlo.html' | relative_url }}">蒙卡模拟</a>
         <a{% if page.url contains 'reference' %} class="current"{% endif %} href="{{ '/reference.html' | relative_url }}">学习资料</a>
+        <a{% if page.url contains 'knowledge' %} class="current"{% endif %} href="{{ '/knowledge.html' | relative_url }}">知识库</a>
         <a{% if page.url contains 'discussion' %} class="current"{% endif %} href="{{ '/discussion.html' | relative_url }}">讨论留言</a>
       </div>
     </nav>
