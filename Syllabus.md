@@ -35,5 +35,3 @@
 - **成绩构成**：
 
 ## 课件下载
-
-[课堂讲义下载](https://disk.pku.edu.cn/link/AAB4A94F4129A248368FAFB8E3EA133267)（提取码：`exp_xxxx`）

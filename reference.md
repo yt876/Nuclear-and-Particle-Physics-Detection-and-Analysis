@@ -68,8 +68,6 @@
 
 ## 后续课程
 
-- [核物理实验数据处理课程](https:///Experimental-Data-Analysis-Course/)
-
 ## 讨论与留言
 
 有疑问或想法？请到[讨论留言](discussion.html)区留言讨论。
