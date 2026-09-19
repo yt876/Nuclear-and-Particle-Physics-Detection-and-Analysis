@@ -10,17 +10,17 @@
 
 <div class="team-grid">
   <a class="team-card" href="https://physics.buaa.edu.cn/info/1265/4767.htm" target="_blank" rel="noopener">
-    <img class="team-photo" src="assets/images/team/sunbaohua.jpg" alt="孙保华">
+    <img class="team-photo" src="assets/images/team/sunbaohua.jpg?v=2" alt="孙保华">
     <span class="team-name">孙保华 教授</span>
     <span class="team-honor">杰青</span>
   </a>
   <a class="team-card" href="https://physics.buaa.edu.cn/info/1265/3155.htm" target="_blank" rel="noopener">
-    <img class="team-photo" src="assets/images/team/zhouxiaopeng.jpg" alt="周小朋">
+    <img class="team-photo" src="assets/images/team/zhouxiaopeng.jpg?v=2" alt="周小朋">
     <span class="team-name">周小朋 教授</span>
     <span class="team-honor">青年长江</span>
   </a>
   <a class="team-card" href="https://physics.buaa.edu.cn/info/1265/3152.htm" target="_blank" rel="noopener">
-    <img class="team-photo" src="assets/images/team/yuanli.jpg" alt="袁丽">
+    <img class="team-photo" src="assets/images/team/yuanli.jpg?v=2" alt="袁丽">
     <span class="team-name">袁丽 教授</span>
     <span class="team-honor">青年拔尖</span>
   </a>
