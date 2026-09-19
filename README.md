@@ -173,4 +173,4 @@
 
 - [课程作业](coursework.html)
 - [ROOT 入门](programming.html)
-- [学习资料与实例](reference.html)
+- [学习资料](reference.html)
