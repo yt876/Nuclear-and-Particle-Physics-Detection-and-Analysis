@@ -27,7 +27,9 @@
         <a{% if page.url == '/' %} class="current"{% endif %} href="{{ '/' | relative_url }}">课程主页</a>
         <a{% if page.url contains 'Syllabus' %} class="current"{% endif %} href="{{ '/Syllabus.html' | relative_url }}">课程安排</a>
         <a{% if page.url contains 'coursework' %} class="current"{% endif %} href="{{ '/coursework.html' | relative_url }}">课程作业</a>
+        <a{% if page.url contains 'experiment' %} class="current"{% endif %} href="{{ '/experiment.html' | relative_url }}">课程实验</a>
         <a{% if page.url contains 'programming' %} class="current"{% endif %} href="{{ '/programming.html' | relative_url }}">编程与 ROOT</a>
+        <a{% if page.url contains 'montecarlo' %} class="current"{% endif %} href="{{ '/montecarlo.html' | relative_url }}">蒙卡模拟</a>
         <a{% if page.url contains 'reference' %} class="current"{% endif %} href="{{ '/reference.html' | relative_url }}">学习资料</a>
         <a{% if page.url contains 'discussion' %} class="current"{% endif %} href="{{ '/discussion.html' | relative_url }}">讨论留言</a>
       </div>
