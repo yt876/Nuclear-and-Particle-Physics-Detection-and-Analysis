@@ -1,39 +1,117 @@
----
-layout: home
-title: Just the Class
-nav_exclude: true
-permalink: /:path/
-seo:
-  type: Course
-  name: Just the Class
----
+# 核物理与粒子物理探测与分析
 
-# Just the Class
+*Nuclear and Particle Physics Detection and Analysis*
 
-Just the Class is a GitHub Pages template developed for the purpose of quickly deploying course websites. In addition to serving plain web pages and files, it provides a boilerplate for:
+## 课程简介
 
-- [announcements](announcements.md),
-- a [course calendar](calendar.md),
-- a [staff](staff.md) page,
-- and a weekly [schedule](schedule.md).
+本课程介绍辐射与物质相互作用、核辐射探测器、统计方法、核电子学、数据获取、数字信号处理和加速器基础。
 
-Just the Class is a template that extends the popular [Just the Docs](https://github.com//) theme, which provides a robust and thoroughly-tested foundation for your website. Just the Docs include features such as:
+## 学习目标与前置知识
 
-- automatic [navigation structure](https://.github.io//docs/navigation-structure/),
-- instant, full-text [search](https://.github.io//docs/search/) and page indexing,
-- and a set of [UI components](https://.github.io//docs/ui-components) and authoring [utilities](https://.github.io//docs/utilities).
+- 掌握常用核辐射探测器的工作原理和基本实验技术；
+- 能够读懂实验论文中有关实验装置和实验方法的内容；
+- 能够使用 ROOT 完成基本的数据处理、绘图与拟合；
+- 了解具有代表性的新型探测技术及其在实验研究中的应用。
 
-## Getting Started
+学习本课程前应修完《原子核物理》。数据分析作业使用 ROOT；尚未接触 ROOT 的学生可按[编程与 ROOT 入门](programming.html)开始学习。
 
-Getting started with Just the Class is simple.
+## 参考书
 
-1. Create a [new repository based on Just the Class](https://github.com//generate).
-1. Update `_config.yml` and `README.md` with your course information. [Be sure to update the url and baseurl](https://mademistakes.com/mastering-jekyll/site-url-baseurl/).
-1. Configure a [publishing source for GitHub Pages](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages). Your course website is now live!
-1. Edit and create `.md` [Markdown files](https://guides.github.com/features/mastering-markdown/) to add more content pages.
+- W. R. Leo, *Techniques for Nuclear and Particle Physics Experiments*, 2nd ed., Springer-Verlag, 1994.
+- G. F. Knoll, *Radiation Detection and Measurement*, 4th ed., Wiley, 2010.
+- H. Kolanoski and N. Wermes, *Particle Detectors: Fundamentals and Applications*, Oxford University Press, 2020.
+- 《原子核物理实验方法（上册）》，第三版，原子能出版社。
+- 《粒子探测技术》。
 
-Just the Class has been used by instructors at Stanford University ([CS 161](https://stanford-cs161.github.io/winter2021/)), UC Berkeley ([Data 100](https://ds100.org/fa21/)), UC Santa Barbara ([CSW8](https://ucsb-csw8.github.io/s22/)), Northeastern University ([CS4530/5500](https://neu-se.github.io/CS4530-CS5500-Spring-2021/)), and Carnegie Mellon University ([17-450/17-950](https://cmu-crafting-software.github.io/)). Share your course website and find more examples in the [show and tell discussion](https://github.com//discussions/categories/show-and-tell)!
+## 课件下载
 
-### Local development environment
+[课堂讲义下载](https://disk.pku.edu.cn/link/AAB4A94F4129A248368FAFB8E3EA133267)（提取码：`exp_xxxx`）
 
-Just the Class requires no special Jekyll plugins and can run on GitHub Pages' standard Jekyll compiler. To setup a local development environment, clone your template repository and follow the GitHub Docs on [Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll).
+## 课程内容
+
+### 第一章　射线与物质的相互作用
+
+1. 重带电粒子与物质的相互作用
+2. 电子与物质的相互作用
+3. γ 射线与物质的相互作用
+4. 中子与物质的相互作用
+
+### 第二章　放射性测量中的统计学
+
+1. 二项分布、Poisson 分布和 Gaussian 分布
+2. 事件的时间间隔分布
+3. 中心极限定理
+4. 误差传播
+5. 参数估计：最大似然法和最小二乘法
+
+### 第三章　探测器信号的一般特征
+
+1. 脉冲信号形成
+2. 核探测器等效电路与 RC 电路
+3. 能量分辨率与时间分辨率
+4. 探测效率
+
+### 第四章　气体探测器
+
+1. 气体电离和传输过程
+2. 雪崩放大机制与气体探测器工作区
+3. 电离室、正比室、MWPC 与 PPAC
+4. 漂移室与 TPC
+5. MSGC、MGC 与 GEM
+
+### 第五章　闪烁探测器
+
+1. 闪烁体探测器的一般特性
+2. 无机闪烁体和有机闪烁体
+3. 脉冲形状甄别
+4. 光电倍增管
+5. 切伦科夫辐射与粒子鉴别
+
+### 第六章　半导体探测器
+
+1. PN 结与耗尽层
+2. 硅探测器和高纯锗探测器
+3. 位置灵敏探测器
+4. 半导体光敏元件
+
+### 第七章　核电子学
+
+1. 傅里叶变换、带宽与阻抗
+2. 同轴电缆中的信号传输、反射与阻抗匹配
+3. 前置放大器、主放大器与 ADC
+4. 时间甄别方法与 TDC
+5. 符合测量
+
+### 第八章　数据获取系统
+
+1. 数据获取系统的基本组成
+2. 触发与基本触发逻辑
+3. VME 系统
+4. 实验应用实例：<sup>14</sup>O 破裂截面测量实验
+
+### 第九章　探测器信号的数字化处理
+
+1. 数字化与混叠误差
+2. Nyquist 采样定理与 Flash ADC
+3. FPGA 与数字化算法
+4. 能量信号：梯形滤波算法
+5. 时间信号：CFD、采样相位偏移、DAC 与 up-sampling
+6. 波形信号处理：脉冲形状甄别与 pile-up 分析
+
+### 第十章　Accelerators for Nuclear Physics
+
+1. 离子源与束流产生
+2. 静电加速器、回旋加速器、直线加速器、同步加速器
+3. 束流光学：磁刚度、偶极磁铁、四极磁铁、传输矩阵
+4. 放射性离子束：In-flight、ISOL、磁分离器
+5. 加速器应用：中子源、对撞机、同步辐射
+
+## 教学安排
+
+各章学时、上课时间和考核方式见[课程安排](Syllabus.html)。
+
+## 课程作业与学习资料
+
+- [课程作业](coursework.html)
+- [编程与 ROOT 入门](programming.html)
+- [学习资料与实例](reference.html)

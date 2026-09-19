@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'zh-CN' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <link rel="icon" type="image/png" href="{{ '/assets/images/course-logo.png' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-logo-link" href="{{ '/' | relative_url }}" aria-label="课程主页">
+          <img class="site-logo" src="{{ '/assets/images/course-logo.png' | relative_url }}" alt="课程标志">
+        </a>
+        <div class="site-title">
+          <a class="site-name" href="{{ '/' | relative_url }}">核物理与粒子物理探测与分析</a>
+          <span class="site-name-en">Nuclear and Particle Physics Detection and Analysis</span>
+        </div>
+      </div>
+    </header>
+
+    <nav class="site-nav" aria-label="课程导航">
+      <div class="site-nav__inner">
+        <a{% if page.url == '/' %} class="current"{% endif %} href="{{ '/' | relative_url }}">课程主页</a>
+        <a{% if page.url contains 'Syllabus' %} class="current"{% endif %} href="{{ '/Syllabus.html' | relative_url }}">课程安排</a>
+        <a{% if page.url contains 'coursework' %} class="current"{% endif %} href="{{ '/coursework.html' | relative_url }}">课程作业</a>
+        <a{% if page.url contains 'programming' %} class="current"{% endif %} href="{{ '/programming.html' | relative_url }}">编程与 ROOT</a>
+        <a{% if page.url contains 'reference' %} class="current"{% endif %} href="{{ '/reference.html' | relative_url }}">学习资料</a>
+      </div>
+    </nav>
+
+    <div class="page-shell">
+      <main class="course-content">
+        {{ content }}
+      </main>
+
+    </div>
+
+    <footer class="site-footer">
+      <div>Nuclear and Particle Physics Detection and Analysis</div>
+    </footer>
+  </body>
+</html>
