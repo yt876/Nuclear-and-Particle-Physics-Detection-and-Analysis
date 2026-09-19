@@ -1,5 +1,5 @@
 (function () {
-  var DATA_URL = 'assets/data/knowledge.json';
+  var DATA_URL = 'assets/data/knowledge.json?v=2';
   var input = document.getElementById('kb-search');
   var catSel = document.getElementById('kb-category');
   var chSel = document.getElementById('kb-chapter');
