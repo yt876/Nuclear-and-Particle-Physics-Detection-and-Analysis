@@ -105,7 +105,8 @@ git push
 
 ## 注意事项
 
-- 页面 Markdown 无 front matter，依赖 GitHub Pages 默认启用的插件（`jekyll-optional-front-matter`、`jekyll-readme-index`、`jekyll-titles-from-headings`、`jekyll-relative-links`，由 `github-pages` gem 提供）
+- 页面 Markdown 无 front matter，标题取第一行 `#`；插件在 `_config.yml` 的 `plugins` 中显式声明（`jekyll-optional-front-matter`、`jekyll-readme-index`、`jekyll-titles-from-headings`、`jekyll-relative-links`、`jekyll-sitemap`，均由 `github-pages` gem 提供）
+- SEO：`_layouts/default.html` 头部含 description/keywords/canonical/Open Graph/Twitter 卡片与 JSON-LD，各页描述在 layout 中按 `page.url` 映射；`robots.txt` 指向 `sitemap.xml`（由 `jekyll-sitemap` 生成）
 - `baseurl` 必须与仓库名一致（`/Nuclear-and-Particle-Physics-Detection-and-Analysis`），否则资源 404
 - `assets/katex/` 是公式渲染依赖，请勿删除
 - 本机通过 https 访问 GitHub 时若报证书错误，可在 git 命令前临时加 `-c http.sslVerify=false`

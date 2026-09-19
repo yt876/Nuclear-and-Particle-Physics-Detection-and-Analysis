@@ -4,16 +4,16 @@
 
 ## 安装与运行
 
-先完成 [ROOT 与 JupyterLab 安装及运行检查](https:///tutorial/setup/ROOT_Jupyter_Installation.html)。
+按 [ROOT 官方安装说明](https://root.cern/install/) 安装 ROOT，并配置 JupyterLab 内核（PyROOT）或 ROOT C++ 解释器。
 
 ## 学习路径
 
 | 内容 | PyROOT | ROOT C++ |
 | --- | --- | --- |
-| 编程基础（按需阅读） | [Python 基础与数组](https:///tutorial/python/Python_Essentials_for_PyROOT.html) | [C++ 基础](https:///tutorial/cpp/introduction_basic.html) · [对象与指针](https:///tutorial/cpp/introduction_advanced.html) |
-| Tutorial I：函数、图、直方图、随机数、基本拟合与 ROOT 文件 | [PyROOT 版](https:///tutorial/ROOT/ROOT_Tutorial_I_PyROOT.html) | [C++ 版](https:///tutorial/ROOT/ROOT_Tutorial_I_CPP.html) |
-| Tutorial II：TTree 读写、关联图与事例选择 | [PyROOT 版](https:///tutorial/ROOT/ROOT_Tutorial_II_PyROOT.html) | [C++ 版](https:///tutorial/ROOT/ROOT_Tutorial_II_CPP.html) |
+| 编程基础（按需阅读） | [Python 官方教程](https://docs.python.org/3/tutorial/) | [C++ 参考手册（cppreference）](https://en.cppreference.com/w/cpp) |
+| Tutorial I：函数、图、直方图、随机数、基本拟合与 ROOT 文件 | [ROOT Primer](https://root.cern/primer/) | [ROOT Primer](https://root.cern/primer/) |
+| Tutorial II：TTree 读写、关联图与事例选择 | [ROOT 官方教程集](https://root.cern/doc/master/group__Tutorials.html) | [ROOT 官方教程集](https://root.cern/doc/master/group__Tutorials.html) |
 
 Tutorial I 配合作业 1–3 使用；Tutorial II 建议学完第一章后阅读，介绍后续作业中的 TTree 读写、关联分析和 cut。
 
-学习第二章的参数估计后，可继续阅读 [ROOT Fit](https:///chapt2/ROOT_Fit_Tutorial.html) 与 [RooFit](https:///chapt2/RooFit%20mini%20tutorial.html) 教程，了解拟合方法、误差与结果检验。
+学习第二章的参数估计后，可继续阅读 [TF1 拟合文档](https://root.cern/doc/master/classTF1.html) 与 [RooFit 用户手册](https://root.cern/manual/roofit/)，了解拟合方法、误差与结果检验。

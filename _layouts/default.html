@@ -3,10 +3,59 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+
+    {%- assign seo_desc = page.description -%}
+    {%- if seo_desc == nil or seo_desc == '' -%}
+      {%- case page.url -%}
+        {%- when '/' -%}{%- assign seo_desc = site.description -%}
+        {%- when '/Syllabus.html' -%}{%- assign seo_desc = '课程安排：章节与学时、上课时间与地点、教学与考核方式、课件下载。' -%}
+        {%- when '/coursework.html' -%}{%- assign seo_desc = '课程作业：能量损失与粒子鉴别、计数统计与误差分析、探测器刻度与性能、数据存储与关联分析、数字波形与粒子甄别。' -%}
+        {%- when '/experiment.html' -%}{%- assign seo_desc = '课程实验：核辐射探测器与核电子学实验内容与安排。' -%}
+        {%- when '/programming.html' -%}{%- assign seo_desc = '编程与 ROOT 入门：ROOT 安装、PyROOT 与 ROOT C++ 学习路径及官方教程。' -%}
+        {%- when '/montecarlo.html' -%}{%- assign seo_desc = '蒙特卡罗模拟：粒子输运与探测器响应模拟入门。' -%}
+        {%- when '/reference.html' -%}{%- assign seo_desc = '学习资料与实例：各章补充实例、拟合教程与参考文献。' -%}
+        {%- when '/knowledge.html' -%}{%- assign seo_desc = '学科知识库：基于《核辐射物理及探测学》的概念、公式、理论、推导、方法与考点检索。' -%}
+        {%- when '/discussion.html' -%}{%- assign seo_desc = '讨论留言：课程问答、学习交流与反馈。' -%}
+        {%- else -%}{%- assign seo_desc = site.description -%}
+      {%- endcase -%}
+    {%- endif -%}
+
     <title>{% if page.title and page.url != '/' %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ seo_desc | escape }}">
+    <meta name="author" content="{{ site.author | escape }}">
+    <meta name="keywords" content="核物理,粒子物理,实验探测与分析,辐射探测,ROOT,蒙特卡罗,知识库,北京航空航天大学">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ site.title | escape }}">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:title" content="{% if page.title and page.url != '/' %}{{ page.title }} · {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{{ seo_desc | escape }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/images/course-logo.svg' | absolute_url }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{% if page.title and page.url != '/' %}{{ page.title }} · {% endif %}{{ site.title }}">
+    <meta name="twitter:description" content="{{ seo_desc | escape }}">
+
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/course-logo.svg' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=6">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": {{ site.title | jsonify }},
+      "description": {{ seo_desc | jsonify }},
+      "inLanguage": "zh-CN",
+      "url": {{ '/' | absolute_url | jsonify }},
+      "provider": {
+        "@type": "CollegeOrUniversity",
+        "name": "北京航空航天大学",
+        "url": "https://www.buaa.edu.cn/"
+      }
+    }
+    </script>
   </head>
   <body>
     <header class="site-header">

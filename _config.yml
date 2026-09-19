@@ -1,8 +1,16 @@
 title: 核与粒子物理实验探测与分析
-description: Nuclear and Particle Physics Detection and Analysis — course overview, schedule, ROOT tutorials, assignments, and learning materials
+description: 北京航空航天大学《核与粒子物理实验探测与分析》课程网站：课程安排、作业与实验、ROOT 编程、蒙特卡罗模拟、学习资料与学科知识库。
 lang: zh-CN
+author: 北京航空航天大学 核与粒子物理实验探测与分析课程
 
 url: 'https://yt876.github.io'
 baseurl: '/Nuclear-and-Particle-Physics-Detection-and-Analysis'
 
-exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "AGENTS.md"]
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+  - jekyll-sitemap
+
+exclude: ["Gemfile", "Gemfile.lock", "AGENTS.md"]
