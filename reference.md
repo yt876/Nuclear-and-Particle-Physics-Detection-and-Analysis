@@ -1,8 +1,8 @@
 # 学习资料与实例
 
-按章节列出补充实例与参考文献。作业题目见[课程作业](coursework.html)，ROOT 基础操作见[编程与 ROOT 入门](programming.html)。
+按主题列出补充实例与参考文献。作业题目见[课程作业](coursework.html)，ROOT 基础操作见 [ROOT 入门](programming.html)。
 
-## 第一章：射线与物质的相互作用
+## 辐射与物质的相互作用
 
 ### 实例
 
@@ -18,7 +18,7 @@
 6. K. Kisamori et al., “Candidate Resonant Tetraneutron State Populated by the ⁴He(⁸He,⁸Be) Reaction,” *Phys. Rev. Lett.* **116**, 052501 (2016).
 7. M. Duer et al., “Observation of a correlated free four-neutron system,” *Nature* **606**, 678–682 (2022).
 
-## 第二章：放射性测量中的统计学
+## 统计与拟合
 
 ### 统计方法与拟合实例
 
@@ -47,11 +47,11 @@
 3. C. B. Hinke et al., “Superallowed Gamow–Teller decay of the doubly magic nucleus ¹⁰⁰Sn,” *Nature* **486**, 341–345 (2012). 衰变数据的参数估计。
 4. T. Zheng et al., “Study of halo structure of ¹⁶C from reaction cross section measurement,” *Nucl. Phys. A* **709**, 103–118 (2002). 截面测量与系统误差。
 
-## 第三章：探测器信号的一般特征
+## 探测器信号特征
 
 - 探测器电流与 RC 电路的输出脉冲（材料准备中）。
 
-## 第四章：气体探测器
+## 气体探测器
 
 ### 栅极电离室（GIC）
 

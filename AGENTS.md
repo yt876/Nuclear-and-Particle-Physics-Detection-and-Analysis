@@ -28,7 +28,7 @@
 - `Syllabus.md` — 课程安排
 - `coursework.md` — 课程作业
 - `experiment.md` — 课程实验
-- `programming.md` — 编程与 ROOT
+- `programming.md` — ROOT 入门
 - `montecarlo.md` — 蒙卡模拟
 - `reference.md` — 学习资料
 - `knowledge.md` — 学科知识库

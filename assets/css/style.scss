@@ -415,7 +415,16 @@ a:hover {
 }
 
 .course-content th {
-  background: #f1efed;
+  color: var(--accent-dark);
+  background: #eef3f8;
+}
+
+.course-content tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.course-content tbody tr:hover {
+  background: #eef4fb;
 }
 
 .course-content code {

@@ -172,5 +172,5 @@
 ## 课程作业与学习资料
 
 - [课程作业](coursework.html)
-- [编程与 ROOT 入门](programming.html)
+- [ROOT 入门](programming.html)
 - [学习资料与实例](reference.html)

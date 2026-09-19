@@ -11,7 +11,7 @@
         {%- when '/Syllabus.html' -%}{%- assign seo_desc = '课程安排：章节与学时、上课时间与地点、教学与考核方式、课件下载。' -%}
         {%- when '/coursework.html' -%}{%- assign seo_desc = '课程作业：能量损失与粒子鉴别、计数统计与误差分析、探测器刻度与性能、数据存储与关联分析、数字波形与粒子甄别。' -%}
         {%- when '/experiment.html' -%}{%- assign seo_desc = '课程实验：核辐射探测器与核电子学实验内容与安排。' -%}
-        {%- when '/programming.html' -%}{%- assign seo_desc = '编程与 ROOT 入门：ROOT 安装、PyROOT 与 ROOT C++ 学习路径及官方教程。' -%}
+        {%- when '/programming.html' -%}{%- assign seo_desc = 'ROOT 入门：ROOT 安装、PyROOT 与 ROOT C++ 学习路径及官方教程。' -%}
         {%- when '/montecarlo.html' -%}{%- assign seo_desc = '蒙特卡罗模拟：粒子输运与探测器响应模拟入门。' -%}
         {%- when '/reference.html' -%}{%- assign seo_desc = '学习资料与实例：各章补充实例、拟合教程与参考文献。' -%}
         {%- when '/knowledge.html' -%}{%- assign seo_desc = '学科知识库：基于《核辐射物理及探测学》的概念、公式、理论、推导、方法与考点检索。' -%}
@@ -39,7 +39,7 @@
     <meta name="twitter:description" content="{{ seo_desc | escape }}">
 
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/course-logo.svg' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=6">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=7">
 
     <script type="application/ld+json">
     {
@@ -77,7 +77,7 @@
         <a{% if page.url contains 'Syllabus' %} class="current"{% endif %} href="{{ '/Syllabus.html' | relative_url }}">课程安排</a>
         <a{% if page.url contains 'coursework' %} class="current"{% endif %} href="{{ '/coursework.html' | relative_url }}">课程作业</a>
         <a{% if page.url contains 'experiment' %} class="current"{% endif %} href="{{ '/experiment.html' | relative_url }}">课程实验</a>
-        <a{% if page.url contains 'programming' %} class="current"{% endif %} href="{{ '/programming.html' | relative_url }}">编程与 ROOT</a>
+        <a{% if page.url contains 'programming' %} class="current"{% endif %} href="{{ '/programming.html' | relative_url }}">ROOT 入门</a>
         <a{% if page.url contains 'montecarlo' %} class="current"{% endif %} href="{{ '/montecarlo.html' | relative_url }}">蒙卡模拟</a>
         <a{% if page.url contains 'reference' %} class="current"{% endif %} href="{{ '/reference.html' | relative_url }}">学习资料</a>
         <a{% if page.url contains 'knowledge' %} class="current"{% endif %} href="{{ '/knowledge.html' | relative_url }}">知识库</a>
