@@ -5,4 +5,4 @@ lang: zh-CN
 url: 'https://yt876.github.io'
 baseurl: '/Nuclear-and-Particle-Physics-Detection-and-Analysis'
 
-exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "AGENTS.md"]
