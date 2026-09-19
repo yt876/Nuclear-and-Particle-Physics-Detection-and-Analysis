@@ -34,18 +34,27 @@
 4. 了解蒙特卡罗模拟思想以及 GEANT4、TRIM 等仿真软件，建立利用模拟手段研究探测器性能的科研思维。
 5. 认识核探测技术在医学诊疗、空天探测等领域的工程应用；理清核物理实验完整研究流程，培养严谨求实的科研素养，为本方向后续科研工作奠定基础。
 
-
 ## 参考书
 
-- W. R. Leo, *Techniques for Nuclear and Particle Physics Experiments*, 2nd ed., Springer-Verlag, 1994.
-- G. F. Knoll, *Radiation Detection and Measurement*, 4th ed., Wiley, 2010.
-- H. Kolanoski and N. Wermes, *Particle Detectors: Fundamentals and Applications*, Oxford University Press, 2020.
-- 《原子核物理实验方法（上册）》，第三版，原子能出版社。
-- 《粒子探测技术》。
+### 中文书目
 
-## 课件下载
+- 原子核物理实验方法（修订第三版），吴治华等主编，原子能出版社
+- 核辐射物理及探测学，陈伯显、张智，哈尔滨工程大学出版社
+- 核辐射探测器，丁洪林，哈尔滨工程大学出版社
+- 核与粒子物理实验方法，李澄，科学出版社
+- 粒子探测器与数据获取，谢一冈等，科学出版社
+- 粒子探测技术，汪晓莲等，中国科技大学出版社
+- 实验物理中的概率和统计，朱永生，科技出版社
+- 高能物理数据分析，朱永生、刘福安 译，中国科技大学出版社
+- 原子核物理，卢希庭，原子能出版社
 
-[课堂讲义下载](https://disk.pku.edu.cn/link/AAB4A94F4129A248368FAFB8E3EA133267)（提取码：`exp_xxxx`）
+### 英文书目
+
+- *Techniques for Nuclear and Particle Physics Experiments: A How-to Approach*, William R. Leo, Springer（必读）
+- *Radiation Detection and Measurement*, Glenn F. Knoll, Wiley
+- *Experimental Techniques in Nuclear and Particle Physics*, Stefaan Tavernier, Springer
+- *Practical Gamma-Ray Spectrometry*, Gilmore and Hemingway, Wiley
+- *Signal Processing for Radiation Detectors*, Mohammad Nakhostin, Wiley
 
 ## 课程内容
 
@@ -126,7 +135,7 @@
 4. 放射性离子束：In-flight、ISOL、磁分离器
 5. 加速器应用：中子源、对撞机、同步辐射
 
-## 教学安排
+## 教学方法与考核
 
 各章学时、上课时间和考核方式见[课程安排](Syllabus.html)。
 
