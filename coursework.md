@@ -4,8 +4,6 @@
 
 作业可在本机 JupyterLab 中完成，选择 PyROOT 或 ROOT C++。尚未配置环境的学生先阅读[编程与 ROOT 入门](programming.html)，完成安装和 Tutorial I。
 
-课程共享 Jupyter 服务以当学期通知为准：[北大校内访问](http://162.105.54.115:8888) · [外部访问](https://pkuenp.natapp1.cc/)。使用时在个人目录中保存文件。
-
 ## 能量损失与粒子鉴别
 
 前置教程：[LISE++ 计算射程和能损及示例代码](https:///chapt1/energy%20loss/LISE_eloss_calculation.html)。低能粒子也可使用 [SRIM](https://www.srim.org/) 计算。
