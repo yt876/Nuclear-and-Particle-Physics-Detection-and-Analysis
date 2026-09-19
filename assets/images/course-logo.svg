@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="核物理标志">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00509e"/>
+      <stop offset="1" stop-color="#002b4d"/>
+    </linearGradient>
+    <radialGradient id="proton" cx="0.35" cy="0.35" r="0.85">
+      <stop offset="0" stop-color="#ff8a65"/>
+      <stop offset="1" stop-color="#d84315"/>
+    </radialGradient>
+    <radialGradient id="neutron" cx="0.35" cy="0.35" r="0.85">
+      <stop offset="0" stop-color="#e3f2fd"/>
+      <stop offset="1" stop-color="#90caf9"/>
+    </radialGradient>
+  </defs>
+  <circle cx="128" cy="128" r="120" fill="url(#bg)"/>
+  <circle cx="128" cy="128" r="117" fill="none" stroke="#7fb2e5" stroke-width="3" opacity="0.7"/>
+  <g fill="none" stroke="#8ec5ff" stroke-width="2.5" opacity="0.5">
+    <ellipse cx="128" cy="128" rx="88" ry="34" transform="rotate(30 128 128)"/>
+    <ellipse cx="128" cy="128" rx="88" ry="34" transform="rotate(-30 128 128)"/>
+    <ellipse cx="128" cy="128" rx="88" ry="34" transform="rotate(90 128 128)"/>
+  </g>
+  <path d="M16 172 Q 120 152 240 58" fill="none" stroke="#ffd54f" stroke-width="3.5" stroke-linecap="round"/>
+  <circle cx="240" cy="58" r="6" fill="#ffd54f"/>
+  <g>
+    <circle cx="108" cy="116" r="18" fill="url(#proton)"/>
+    <circle cx="148" cy="118" r="18" fill="url(#neutron)"/>
+    <circle cx="128" cy="150" r="18" fill="url(#proton)"/>
+    <circle cx="130" cy="102" r="16" fill="url(#neutron)"/>
+    <circle cx="101" cy="146" r="15" fill="url(#neutron)"/>
+    <circle cx="155" cy="146" r="15" fill="url(#proton)"/>
+  </g>
+</svg>

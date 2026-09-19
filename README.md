@@ -1,4 +1,4 @@
-# 核物理与粒子物理探测与分析
+# 核与粒子物理探测与分析
 
 *Nuclear and Particle Physics Detection and Analysis*
 
