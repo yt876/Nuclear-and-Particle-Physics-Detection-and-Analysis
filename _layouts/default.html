@@ -25,6 +25,9 @@
     <meta name="author" content="{{ site.author | escape }}">
     <meta name="keywords" content="核物理,粒子物理,实验探测与分析,辐射探测,ROOT,蒙特卡罗,知识库,北京航空航天大学">
     <meta name="robots" content="index, follow">
+    {%- if site.bing_verification and site.bing_verification != '' %}
+    <meta name="msvalidate.01" content="{{ site.bing_verification }}">
+    {%- endif %}
     <link rel="canonical" href="{{ page.url | absolute_url }}">
 
     <meta property="og:type" content="website">
