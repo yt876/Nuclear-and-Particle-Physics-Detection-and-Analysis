@@ -28,6 +28,17 @@
 
 上课时间和地点以当期教务通知为准，具体请查看 <a href="https://gsmis.buaa.edu.cn/gsapp/sys/wdkbapp/*default/index.do?v=f6e7a78b-58c3-4d14-830e-490e500348a0&amp;THEME=buaablue&amp;EMAP_LANG=zh&amp;_yhz=9255204331ec4fe1bbf36824ea4f80b4#/xskcb" target="_blank" rel="noopener"><strong>我的课表</strong></a>。
 
+## 实验安排
+
+配套实验随第 3–6 章进行，具体时间、分组与地点以当期通知为准。
+
+| 实验 | 对应章节 |
+| --- | --- |
+| 射线与物质相互作用 | 第3章 |
+| 气体探测器 | 第4章 |
+| 闪烁体探测器 | 第5章 |
+| 半导体探测器 | 第6章 |
+
 ## 教学与考核
 
 - **教学方式**：理论授课为主，部分课时采用演示实验相结合的方式。

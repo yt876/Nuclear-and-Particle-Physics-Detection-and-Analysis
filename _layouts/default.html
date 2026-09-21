@@ -14,6 +14,8 @@
         {%- when '/programming.html' -%}{%- assign seo_desc = 'ROOT 入门：ROOT 安装、PyROOT 与 ROOT C++ 学习路径及官方教程。' -%}
         {%- when '/montecarlo.html' -%}{%- assign seo_desc = '蒙特卡罗模拟：粒子输运与探测器响应模拟入门。' -%}
         {%- when '/reference.html' -%}{%- assign seo_desc = '学习资料：课程补充材料与参考文献。' -%}
+        {%- when '/tools.html' -%}{%- assign seo_desc = '软件工具：ROOT、Geant4、TRIM/SRIM、LISE++、Linux 的安装与入门入口。' -%}
+        {%- when '/faq.html' -%}{%- assign seo_desc = '常见问题：选课与先修、作业与实验、考核与成绩等高频问题。' -%}
         {%- when '/knowledge.html' -%}{%- assign seo_desc = '学科知识库：基于《核辐射物理及探测学》的概念、公式、理论、推导、方法与考点检索。' -%}
         {%- when '/discussion.html' -%}{%- assign seo_desc = '讨论留言：课程问答、学习交流与反馈。' -%}
         {%- else -%}{%- assign seo_desc = site.description -%}
@@ -42,7 +44,7 @@
     <meta name="twitter:description" content="{{ seo_desc | escape }}">
 
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/course-logo.svg' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=7">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=8">
 
     <script type="application/ld+json">
     {
@@ -82,8 +84,10 @@
         <a{% if page.url contains 'experiment' %} class="current"{% endif %} href="{{ '/experiment.html' | relative_url }}">课程实验</a>
         <a{% if page.url contains 'programming' %} class="current"{% endif %} href="{{ '/programming.html' | relative_url }}">ROOT 入门</a>
         <a{% if page.url contains 'montecarlo' %} class="current"{% endif %} href="{{ '/montecarlo.html' | relative_url }}">蒙卡模拟</a>
+        <a{% if page.url contains 'tools' %} class="current"{% endif %} href="{{ '/tools.html' | relative_url }}">软件工具</a>
         <a{% if page.url contains 'reference' %} class="current"{% endif %} href="{{ '/reference.html' | relative_url }}">学习资料</a>
         <a{% if page.url contains 'knowledge' %} class="current"{% endif %} href="{{ '/knowledge.html' | relative_url }}">知识库</a>
+        <a{% if page.url contains 'faq' %} class="current"{% endif %} href="{{ '/faq.html' | relative_url }}">常见问题</a>
         <a{% if page.url contains 'discussion' %} class="current"{% endif %} href="{{ '/discussion.html' | relative_url }}">讨论留言</a>
       </div>
     </nav>
@@ -96,7 +100,8 @@
     </div>
 
     <footer class="site-footer">
-      <div>核与粒子物理实验探测与分析 · Detection and Analysis in Nuclear and Particle Physics Experiments</div>
+      <div>北京航空航天大学物理学院 · 核与粒子物理实验探测与分析 · Detection and Analysis in Nuclear and Particle Physics Experiments</div>
     </footer>
+    <script src="{{ '/assets/js/site.js' | relative_url }}" defer></script>
   </body>
 </html>
