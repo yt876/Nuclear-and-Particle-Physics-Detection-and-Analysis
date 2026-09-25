@@ -814,3 +814,227 @@ html {
   color: var(--accent-dark);
   font-size: 1rem;
 }
+
+/* ---------- 面包屑与打印 ---------- */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+.breadcrumb a {
+  color: var(--accent);
+}
+
+.breadcrumb__sep {
+  margin: 0 6px;
+  color: #a8b1bb;
+}
+
+.print-btn {
+  flex: 0 0 auto;
+  padding: 4px 12px;
+  color: var(--accent-dark);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.print-btn:hover {
+  background: #eef4fb;
+}
+
+/* ---------- 主题切换 ---------- */
+.theme-toggle {
+  margin-left: auto;
+  padding: 6px 14px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.26);
+}
+
+/* ---------- 深色模式 ---------- */
+[data-theme="dark"] {
+  --ink: #e7ebf0;
+  --muted: #9aa6b3;
+  --line: #313c47;
+  --paper: #1b2129;
+  --page: #12171d;
+  --accent: #58a6e6;
+  --accent-dark: #8cc4f2;
+}
+
+[data-theme="dark"] body {
+  background-image: none;
+}
+
+[data-theme="dark"] .site-header {
+  background: linear-gradient(135deg, #0b2c4c 0%, #123a63 55%, #174a7d 100%);
+}
+
+[data-theme="dark"] .site-nav {
+  background: #1b2129;
+  border-bottom-color: var(--line);
+}
+
+[data-theme="dark"] .site-nav a {
+  color: #cfd6de;
+}
+
+[data-theme="dark"] .course-content {
+  background: var(--paper);
+  border-color: var(--line);
+  box-shadow: none;
+}
+
+[data-theme="dark"] .course-content th {
+  background: #232c36;
+}
+
+[data-theme="dark"] .course-content tbody tr:nth-child(even) {
+  background: #202833;
+}
+
+[data-theme="dark"] .course-content tbody tr:hover {
+  background: #26313d;
+}
+
+[data-theme="dark"] .course-content code,
+[data-theme="dark"] .course-content pre {
+  background: #232c36;
+}
+
+[data-theme="dark"] .course-content blockquote {
+  color: var(--muted);
+  border-left-color: #3f4c5a;
+}
+
+[data-theme="dark"] .chapter-think {
+  color: #9aa6b3;
+  background: #232c36;
+  border-left-color: #3f4c5a;
+}
+
+[data-theme="dark"] .resource-card,
+[data-theme="dark"] .kb-card,
+[data-theme="dark"] .kb-detail {
+  background: #202833;
+}
+
+[data-theme="dark"] .toc {
+  background: #1b2129;
+}
+
+[data-theme="dark"] .toc a {
+  color: #cfd6de;
+}
+
+[data-theme="dark"] .toc a.lvl3 {
+  color: #9aa6b3;
+}
+
+[data-theme="dark"] .toc a:hover,
+[data-theme="dark"] .toc a.active {
+  background: #26313d;
+}
+
+[data-theme="dark"] .print-btn {
+  background: #202833;
+  border-color: var(--line);
+}
+
+[data-theme="dark"] .kb-search,
+[data-theme="dark"] .kb-select {
+  color: var(--ink);
+  background: #202833;
+  border-color: var(--line);
+}
+
+[data-theme="dark"] .tag-meta {
+  color: #a9d0f2;
+  background: #1d3350;
+}
+
+[data-theme="dark"] .tag-lab {
+  color: #f2d98a;
+  background: #4a3c12;
+}
+
+[data-theme="dark"] .tag-self {
+  color: #c9b3ee;
+  background: #34284d;
+}
+
+[data-theme="dark"] .tag-extra {
+  color: #a7e0bd;
+  background: #1e3d2a;
+}
+
+[data-theme="dark"] .tag-required {
+  color: #f0b4b4;
+  background: #46232a;
+}
+
+[data-theme="dark"] .kb-tag {
+  color: #a9d0f2;
+  background: #1d3350;
+}
+
+[data-theme="dark"] .kb-tag--ch {
+  color: #b9c4cf;
+  background: #232c36;
+}
+
+[data-theme="dark"] .kb-tag--src {
+  color: #e6c98a;
+  background: #3a3016;
+}
+
+[data-theme="dark"] .kb-detail > summary:hover {
+  background: #26313d;
+}
+
+[data-theme="dark"] .kb-detail__body th {
+  background: #232c36;
+}
+
+[data-theme="dark"] .site-footer {
+  background: linear-gradient(135deg, #0b2c4c 0%, #123a63 100%);
+}
+
+/* ---------- 打印 ---------- */
+@media print {
+  .site-header,
+  .site-nav,
+  .site-footer,
+  .toc,
+  .to-top,
+  .breadcrumb,
+  .print-btn,
+  .theme-toggle {
+    display: none !important;
+  }
+
+  .page-shell {
+    padding: 0;
+  }
+
+  .course-content {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+}

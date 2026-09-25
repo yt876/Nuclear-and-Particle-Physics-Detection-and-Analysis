@@ -55,7 +55,7 @@
     <meta name="twitter:description" content="{{ seo_desc | escape }}">
 
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/course-logo.svg' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=8">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v=9">
 
     <script type="application/ld+json">
     {
@@ -72,6 +72,15 @@
       }
     }
     </script>
+
+    <script>
+      (function () { try { if (localStorage.getItem('theme') === 'dark') document.documentElement.setAttribute('data-theme', 'dark'); } catch (e) {} })();
+    </script>
+    {%- if page.url != '/' -%}
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"课程主页","item":{{ '/' | absolute_url | jsonify }}},{"@type":"ListItem","position":2,"name":{{ page.title | default: site.title | jsonify }},"item":{{ page.url | absolute_url | jsonify }}}]}
+    </script>
+    {%- endif -%}
   </head>
   <body>
     <header class="site-header">
@@ -84,6 +93,7 @@
           <span class="site-name-en">Detection and Analysis in Nuclear and Particle Physics Experiments</span>
         </div>
         <img class="site-partner" src="{{ '/assets/images/buaa-logo.png' | relative_url }}" alt="北京航空航天大学">
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换深色模式">深色</button>
       </div>
     </header>
 
@@ -104,6 +114,12 @@
     </nav>
 
     <div class="page-shell">
+      {%- if page.url != '/' -%}
+      <nav class="breadcrumb" aria-label="面包屑导航">
+        <span class="breadcrumb__path"><a href="{{ '/' | relative_url }}">课程主页</a><span class="breadcrumb__sep">›</span>{{ page.title | default: site.title }}</span>
+        <button id="print-page" class="print-btn" type="button">打印本页</button>
+      </nav>
+      {%- endif -%}
       <main class="course-content">
         {{ content }}
       </main>

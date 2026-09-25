@@ -1,5 +1,28 @@
 (function () {
-  function init() {
+  function initTheme() {
+    var btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    function sync() {
+      var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+      btn.textContent = dark ? '浅色' : '深色';
+      btn.setAttribute('aria-label', dark ? '切换到浅色模式' : '切换到深色模式');
+    }
+    btn.addEventListener('click', function () {
+      var dark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (dark) document.documentElement.removeAttribute('data-theme');
+      else document.documentElement.setAttribute('data-theme', 'dark');
+      try { localStorage.setItem('theme', dark ? 'light' : 'dark'); } catch (e) {}
+      sync();
+    });
+    sync();
+  }
+
+  function initPrint() {
+    var btn = document.getElementById('print-page');
+    if (btn) btn.addEventListener('click', function () { window.print(); });
+  }
+
+  function initToc() {
     var content = document.querySelector('.course-content');
     if (!content) return;
 
@@ -103,6 +126,12 @@
     }
     window.addEventListener('scroll', toggleTop, { passive: true });
     toggleTop();
+  }
+
+  function init() {
+    initTheme();
+    initPrint();
+    initToc();
   }
 
   if (document.readyState === 'loading') {
