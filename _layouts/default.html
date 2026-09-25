@@ -22,11 +22,19 @@
       {%- endcase -%}
     {%- endif -%}
 
-    <title>{% if page.title and page.url != '/' %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+    {%- if page.url == '/' -%}
+      {%- assign page_title = site.title | append: ' · 北京航空航天大学课程网站' -%}
+    {%- elsif page.title -%}
+      {%- assign page_title = page.title | append: ' · ' | append: site.title -%}
+    {%- else -%}
+      {%- assign page_title = site.title -%}
+    {%- endif -%}
+
+    <title>{{ page_title }}</title>
     <meta name="description" content="{{ seo_desc | escape }}">
     <meta name="author" content="{{ site.author | escape }}">
-    <meta name="keywords" content="核物理,粒子物理,实验探测与分析,辐射探测,ROOT,蒙特卡罗,知识库,北京航空航天大学">
-    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="核物理,粒子物理,实验探测与分析,辐射探测,探测器,气体探测器,闪烁体探测器,半导体探测器,能谱测量,ROOT,Geant4,蒙特卡罗,核素图,知识库,北京航空航天大学">
+    <meta name="robots" content="index, follow, max-image-preview:large">
     {%- if site.bing_verification and site.bing_verification != '' %}
     <meta name="msvalidate.01" content="{{ site.bing_verification }}">
     {%- endif %}
@@ -35,12 +43,12 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="{{ site.title | escape }}">
     <meta property="og:locale" content="zh_CN">
-    <meta property="og:title" content="{% if page.title and page.url != '/' %}{{ page.title }} · {% endif %}{{ site.title }}">
+    <meta property="og:title" content="{{ page_title }}">
     <meta property="og:description" content="{{ seo_desc | escape }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:image" content="{{ '/assets/images/course-logo.svg' | absolute_url }}">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{% if page.title and page.url != '/' %}{{ page.title }} · {% endif %}{{ site.title }}">
+    <meta name="twitter:title" content="{{ page_title }}">
     <meta name="twitter:description" content="{{ seo_desc | escape }}">
 
     <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/course-logo.svg' | relative_url }}">

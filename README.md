@@ -2,6 +2,8 @@
 
 *Detection and Analysis in Nuclear and Particle Physics Experiments*
 
+👉 在线课程网站：https://yt876.github.io/Nuclear-and-Particle-Physics-Detection-and-Analysis/
+
 ## 课程概述
 
 本课程围绕核辐射探测技术展开，讲授射线与物质相互作用、气体 / 闪烁 / 半导体探测器（配套实验）、核实验测量与电子学；学习 ROOT 数据分析、Geant4 等仿真；介绍医学诊疗与空天探测应用，培养核技术方向科研实践能力。
