@@ -111,3 +111,12 @@ git push
 - `assets/katex/` 是公式渲染依赖，请勿删除
 - 本机通过 https 访问 GitHub 时若报证书错误，可在 git 命令前临时加 `-c http.sslVerify=false`
 - 讨论留言使用 giscus（GitHub Discussions，分类 `Announcements`）；首次需在仓库安装 giscus App，之后在 Discussions 内审核/删除评论
+
+## 协作与安全
+
+- 仓库公开；`main` 已启用分支保护：要求 PR + 1 审批（过时审批自动失效）、要求解决对话、禁止强推与删除分支；`enforce_admins=false`，**管理员仍可直接推送**
+- 协作者按最小权限添加：内容维护 → Write；审阅/分类 → Triage；只读 → Read；尽量不给 Admin
+- Actions 仅允许 GitHub 官方与已验证 Action；外部贡献者的 fork PR 需审批
+- 已开启 Secret 扫描（含 push protection）、漏洞警报与 Dependabot 安全更新
+- 账号建议开启 2FA；本地推送使用系统凭据管理器，注意收敛 PAT 权限
+- 仓库公开，**不要**提交未公开试题答案、学生个人信息、成绩等敏感内容
