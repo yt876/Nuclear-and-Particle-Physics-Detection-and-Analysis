@@ -16,4 +16,4 @@ plugins:
   - jekyll-relative-links
   - jekyll-sitemap
 
-exclude: ["Gemfile", "Gemfile.lock", "AGENTS.md"]
+exclude: ["Gemfile", "Gemfile.lock", "AGENTS.md", "README.md"]

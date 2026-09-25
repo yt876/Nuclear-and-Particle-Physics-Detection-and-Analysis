@@ -24,7 +24,7 @@
 
 页面均为 Markdown（**无 front matter**，标题取第一行 `#`）：
 
-- `README.md` — 课程主页（Jekyll 用它生成首页）
+- `index.md` — 课程主页（Jekyll 用它生成首页）
 - `Syllabus.md` — 课程安排
 - `coursework.md` — 课程作业
 - `experiment.md` — 课程实验
@@ -39,7 +39,7 @@
 ### 改站名 / 英文名 / 页脚
 - 站名、英文名、页脚：`_layouts/default.html`
 - 浏览器标签页标题：`_config.yml` 的 `title`
-- 首页大标题与副标题：`README.md` 开头
+- 首页大标题与副标题：`index.md` 开头
 
 ### 增删导航菜单
 - 编辑 `_layouts/default.html` 的 `<nav class="site-nav">`，每项一个 `<a>`
@@ -50,8 +50,8 @@
 - **改完样式务必把** `_layouts/default.html` 里 `style.css?v=N` 的 `N` 加 1（避免浏览器缓存旧样式）
 
 ### 教学团队
-- 名单与链接：`README.md` 的 `<div class="team-grid">`
-- 换照片：替换 `assets/images/team/` 下对应文件，并把 `README.md` 中图片链接的 `?v=N` 加 1
+- 名单与链接：`index.md` 的 `<div class="team-grid">`
+- 换照片：替换 `assets/images/team/` 下对应文件，并把 `index.md` 中图片链接的 `?v=N` 加 1
 
 ### 更新知识库
 - 编辑 `assets/data/knowledge.json`，条目格式：
@@ -79,7 +79,7 @@
 - 更新后把 `assets/js/knowledge.js` 里 `knowledge.json?v=N` 的 `N` 加 1
 
 ### 课程内容分栏
-- 结构：`README.md` 的 `<div class="course-columns" markdown="1">…</div>`
+- 结构：`index.md` 的 `<div class="course-columns" markdown="1">…</div>`
 - 样式：`assets/css/style.scss` 的 `.course-columns`（窄屏自动单列）
 
 ## 本地预览（可选）
