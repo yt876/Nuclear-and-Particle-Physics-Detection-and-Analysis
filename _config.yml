@@ -6,6 +6,9 @@ author: 北京航空航天大学 核与粒子物理实验探测与分析课程
 # Bing 站长验证：在 Bing Webmaster Tools 获取 content 值后填入（留空则不输出）
 bing_verification: "5FB86645253238CF68576A159EA556B6"
 
+# Google 站长验证：在 Google Search Console 获取 content 值后填入（留空则不输出）
+google_verification: ""
+
 url: 'https://yt876.github.io'
 baseurl: '/Nuclear-and-Particle-Physics-Detection-and-Analysis'
 

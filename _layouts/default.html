@@ -38,6 +38,9 @@
     {%- if site.bing_verification and site.bing_verification != '' %}
     <meta name="msvalidate.01" content="{{ site.bing_verification }}">
     {%- endif %}
+    {%- if site.google_verification and site.google_verification != '' %}
+    <meta name="google-site-verification" content="{{ site.google_verification }}">
+    {%- endif %}
     <link rel="canonical" href="{{ page.url | absolute_url }}">
 
     <meta property="og:type" content="website">
