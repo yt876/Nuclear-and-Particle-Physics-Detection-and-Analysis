@@ -47,6 +47,6 @@
 
 ## 课件下载
 
-课件与讲义通过企业微信微盘共享，请点击以下链接获取（需校园网络 / 校园账号）：
+课件与讲义通过北航云盘共享，请点击以下链接获取（需校园网络 / 校园账号）：
 
-- [课件分享链接（企业微信微盘）](https://qywxdrive.buaa.edu.cn/s?k=AKYAEwdvAAgaLFZYhA)
+- [课件分享链接（北航云盘）](https://bhpan.buaa.edu.cn/link/AR9E142F1908E64B74B7922184F8B59BC5)
