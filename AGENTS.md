@@ -110,6 +110,7 @@ git -c http.sslVerify=false push origin main
 - `_layouts/default.html` 头部：`title`、`description`、`author`、`keywords`、`robots`、`canonical`、Open Graph、Twitter 卡片、`Course` 与 `BreadcrumbList` JSON-LD；各页 description 在 layout 中按 `page.url` 映射。
 - `sitemap.xml` 由 `jekyll-sitemap` 生成；`robots.txt` 指向它。
 - 站点验证：`_config.yml` 的 `bing_verification`、`google_verification`（留空则不输出对应 meta）。
+- IndexNow：根目录 `<key>.txt`（key = 文件名/内容），新增页面后可 POST 到 `https://api.indexnow.org/indexnow` 主动通知 Bing/Yandex 等。
 - 收录进度：Bing/Google 已加验证，需在站长后台**提交 sitemap** 并请求抓取；收录需时间。百度因 `github.io` 主域配额限制无法添加，需绑定**自有域名**。
 - 可优化项：`og:image` 现为 SVG logo，社交预览建议换 **1200×630 PNG**；README 可加**网站预览截图**。
 
